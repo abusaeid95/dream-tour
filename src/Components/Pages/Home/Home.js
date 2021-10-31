@@ -6,7 +6,7 @@ import './Home.css'
 const Home = () => {
     const [offers, setOffers] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/offers')
+        fetch('https://frightening-phantom-67062.herokuapp.com/offers')
             .then(res => res.json())
             .then(data => setOffers(data))
     }, [])
@@ -34,7 +34,7 @@ const Home = () => {
 
                         <Carousel.Caption>
                             <h3>Second slide label</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitt.</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
