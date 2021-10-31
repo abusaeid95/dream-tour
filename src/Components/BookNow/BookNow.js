@@ -14,7 +14,7 @@ const BookNow = () => {
     const redirect_url = location.state?.from || '/';
 
     useEffect(() => {
-        fetch(`http://localhost:5000/booking/${id}`)
+        fetch(`https://frightening-phantom-67062.herokuapp.com/booking/${id}`)
             .then(res => res.json())
             .then(data => serOffer(data))
     }, []);
@@ -22,7 +22,7 @@ const BookNow = () => {
     const onSubmit = data => {
         data.status = "pending";
         data.user_email = user.email;
-        fetch(`http://localhost:5000/booked/${id}`, {
+        fetch(`https://frightening-phantom-67062.herokuapp.com/booked/${id}`, {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data)

@@ -10,7 +10,7 @@ const MyBooking = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/mybooking/${user?.email}`)
+        fetch(`https://frightening-phantom-67062.herokuapp.com/mybooking/${user?.email}`)
             .then(res => res.json())
             .then(data => setMybooking(data))
             
@@ -18,7 +18,7 @@ const MyBooking = () => {
     const deletebooking = (id) =>{
         const proceed = window.confirm('Are you want to cancel?')
         if(proceed){
-            const url=`http://localhost:5000/mybooking/${user?.email}/${id}`
+            const url=`https://frightening-phantom-67062.herokuapp.com/mybooking/${user?.email}/${id}`
             fetch(url, {
                 method: "DELETE"
             }).then(res => res.json())
@@ -59,24 +59,6 @@ const MyBooking = () => {
                 </Card.Body>)      
                 }
             </Card>
-
-            {/* <Card.Body>
-                    <div className="row ofrimg">
-                        <div className="col">
-                            <h3>{mybooking.Country}</h3>
-                        </div>
-                        <div className="col">
-                            <h3>{mybooking.location}</h3>
-                        </div>
-                        <div className="col">
-                            <h3><img src={mybooking.img} alt="" /></h3>
-                        </div>
-                        <div className="col mt-auto mb-auto ">
-                            <button onClick={()=>deletebooking(mybooking._id)} className="bg-danger p-2 px-4 me-2 rounded text-white">Cancel</button>
-                        </div>
-                    </div>
-
-                </Card.Body> */}
         </>
     );
 };

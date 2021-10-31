@@ -6,7 +6,7 @@ import './AddContent.css'
 const AddContent = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        fetch('http://localhost:5000/offers', {
+        fetch('https://frightening-phantom-67062.herokuapp.com/offers', {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data)

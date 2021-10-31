@@ -7,7 +7,7 @@ import OrderTable from './OrderTable';
 const AllOrders = () => {
     const [orders, setOrders] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/booked')
+        fetch('https://frightening-phantom-67062.herokuapp.com/booked')
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [])
