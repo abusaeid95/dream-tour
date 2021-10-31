@@ -134,7 +134,7 @@ const Home = () => {
             <div className="thrddstle d-flex align-items-center justify-content-center">
                 <div className="">
                     <h1 className="text-white">Fastest Way to Compare and <br /> Book over 450 Cheap Flights</h1>
-                    <button className="bg-dark text-white    rounded p-2 ">FIND YOUR FLIGHT</button>
+                    <button className="text-white findybtn  p-2 ">FIND YOUR FLIGHT</button>
                 </div>
             </div>
         </div>

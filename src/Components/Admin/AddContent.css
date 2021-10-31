@@ -1,3 +1,15 @@
 .addinput input{
- width: 50%;
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    border-color: rgb(226, 177, 135);
+}
+.addbknbtn{
+    background-color: #faae4a;
+    color: #fff;
+    padding: 10px;
+    width: 120px;
+    border-radius: 30px;
+    border: 0px;
 }

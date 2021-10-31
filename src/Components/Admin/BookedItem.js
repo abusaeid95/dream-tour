@@ -67,8 +67,6 @@ const BookedItem = () => {
                         </Card.Body>
                     </Card>
                 )}
-
-            <Link to="/admin" className="bg-warning p-3 text-center my-3 rounded">Back to Admin</Link>
         </div>
     );
 };

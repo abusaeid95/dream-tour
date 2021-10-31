@@ -4,10 +4,12 @@ import './AboutUs.css';
 const AboutUs = () => {
     return (
         <div>
-            <div className="text-center bgimg ">
-                <h1>About Us</h1>
-                <h3>Learn More About SunTravel</h3>
+            <div className="d-flex text-center align-items-center justify-content-center bgimg " >
+                <div >
+                    <h1>About Us</h1>
+                    <p><i>Learn More About DreamTour</i></p>
 
+                </div>
             </div>
         </div>
     );

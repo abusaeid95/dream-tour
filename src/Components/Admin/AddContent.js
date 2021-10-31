@@ -20,7 +20,7 @@ const AddContent = () => {
     }
     return (
         <div className="text-center my-5 py-5 addinput">
-            <Link to="/admin" className="bg-warning p-3 text-center my-3 rounded">Back to Admin</Link>
+           
             <form onSubmit={handleSubmit(onSubmit)} className="mt-5">
                 <input {...register("img")} placeholder="Add Image" />
                 <br />
@@ -34,7 +34,7 @@ const AddContent = () => {
                 <br />
                 <input {...register("time")} placeholder="Estimated Days" />
                 <br />
-                <input className="my-2" type="submit" />
+                <input  className="my-2 addbknbtn" type="submit" />
             </form>
         </div>
     );

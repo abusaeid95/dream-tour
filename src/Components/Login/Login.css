@@ -1,10 +1,19 @@
 .login{
-    background-color: #aac0c593;
+    background-color: #cbc9c9;
     margin: auto;
     width: 20%;
     height: 50%;
     border: 3px solid rgba(45, 53, 45, 0.349);
     padding: 10px;
 
+}
+
+.singinbtn{
+    background-color: #eb9524;
+    color: #fff;
+    padding: 10px;
+    width: 200px;
+    border-radius: 30px;
+    border: 0px;
 }
 

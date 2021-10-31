@@ -1,23 +1,32 @@
-.items {
-    list-style: none;
-    margin: 5px;
-    font-size: 20px;
-    text-decoration: none;
-    color: black;
-  }
-.items > a{
- text-decoration: none;
+
+.logo-img{
+  width: 6rem;
+  margin-right: 1rem;
+  border-radius: 50%;
 }
-/* .navbarcss {
-  position: absolute;
-  z-index: 111;
-  width: 100%;
-  
-} */
-/* .nabvar-ul a{
-  color: white;
-} */
-  /* .menubar-container{
-    position: relative;
-    top: 100px;
-  } */
+
+.drop-icon{
+  border-radius: 50%;
+  width: 3rem;
+  margin-left: 1rem;
+}
+.signbtn{
+  background-color: #faae4a;
+    color: #fff;
+    padding: 10px;
+    width: 100px;
+    border-radius: 20px;
+    border: 0px;
+    text-align: center;
+}
+.profilebtn{
+  background-color: #faae4a;
+    color: #fff;
+    padding: 10px;
+    width: 120px;
+    border-radius: 30px;
+    border: 0px;
+}
+.profilebtn:hover{
+  background-color: rgb(156, 238, 191);
+}

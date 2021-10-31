@@ -7,6 +7,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Components/Pages/Home/Home';
 import Menubar from './Components/MenuBar/Menubar';
 import Login from './Components/Login/Login';
@@ -22,6 +23,9 @@ import UpdateOffers from './Components/Admin/UpdateOffers/UpdateOffers';
 import BookedItem from './Components/Admin/BookedItem';
 import AboutUs from './Components/AboutUs/AboutUs';
 import Footer from './Components/Footer/Footer';
+import Contacts from './Components/Contacts/Contacts';
+import Gallery from './Components/Gallery/Gallery';
+import Blogs from './Components/Blogs/Blogs';
 
 
 function App() {
@@ -32,44 +36,45 @@ function App() {
           <Menubar></Menubar>
           <Switch>
             <Route exact path="/">
-
               <Home></Home>
             </Route>
             <Route path="/login">
               <Login></Login>
             </Route>
             <PrivateRoute path="/booking/:id">
-            <BookNow></BookNow>
+              <BookNow></BookNow>
             </PrivateRoute>
             <PrivateRoute path="/mybooking">
-            <MyBooking></MyBooking>
+              <MyBooking></MyBooking>
             </PrivateRoute>
+            <Route path="/blogs">
+              <Blogs></Blogs>
+            </Route>
             <Route path="/about">
               <AboutUs></AboutUs>
+            </Route>
+            <Route path="/contacts">
+              <Contacts></Contacts>
             </Route>
             <PrivateRoute path="/addcontent">
               <AddContent></AddContent>
             </PrivateRoute>
-            <PrivateRoute path="/admin">
-              <Admin></Admin>
-            </PrivateRoute>
             <Route path="/bookeditems/update/:id">
               <UpdateOffers></UpdateOffers>
             </Route>
-            <Route path="/allorders">
+            <Route path="/allbooking">
               <AllOrders></AllOrders>
             </Route>
-            <Route path="/bookeditems">
-              <BookedItem></BookedItem>
+            <Route path="/gallery">
+            <Gallery></Gallery>
             </Route>
             <Route path="*">
               <NotFound></NotFound>
             </Route>
           </Switch>
-          <Route>
-              <Footer></Footer>
-            </Route>
+            
         </Router>
+        <Footer></Footer>
       </AuthProvider>
     </div>
   );

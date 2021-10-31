@@ -11,7 +11,7 @@ const BookNow = () => {
     const location = useLocation()
     const history = useHistory()
 
-    const redirect_url = location.state?.from || '/';
+    const redirect_url = location.state?.from || '/mybooking';
 
     useEffect(() => {
         fetch(`https://frightening-phantom-67062.herokuapp.com/booking/${id}`)
@@ -59,7 +59,7 @@ const BookNow = () => {
                 <br />
                 <input  {...register("user_address")} type="text" placeholder="Your Address" />
                 <br />
-                <input className="my-2" type="submit" />
+                <input className="my-2 infobtn" type="submit" />
             </form>
         </div>
     );

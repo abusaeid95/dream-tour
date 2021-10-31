@@ -23,12 +23,12 @@ const OfferCard = ({ offer }) => {
                     </div>
                     <h5 className="card-title">{offer.location}</h5>
                     <div className="d-flex timeb">
-                        <p>{offer?.description}</p>
+                        <p>{offer?.description.slice(0,120)}</p>
                         {/* <p><i className="fas fa-book-open"></i> {lectures} Lectures</p> */}
                     </div>
                     <div className="d-flex timeb">
                         <h5>${offer.price}</h5>
-                        <Link to={`/booking/${offer?._id}`}><button className="bg-success text-white rounded p-2 px-3">Book Now</button></Link>
+                        <Link to={`/booking/${offer?._id}`}><button className="offerbtn text-white p-2 px-3">Book Now</button></Link>
                     </div>
                 </div>
             </div>
