@@ -1,0 +1,23 @@
+.items {
+    list-style: none;
+    margin: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+  }
+.items > a{
+ text-decoration: none;
+}
+/* .navbarcss {
+  position: absolute;
+  z-index: 111;
+  width: 100%;
+  
+} */
+/* .nabvar-ul a{
+  color: white;
+} */
+  /* .menubar-container{
+    position: relative;
+    top: 100px;
+  } */
