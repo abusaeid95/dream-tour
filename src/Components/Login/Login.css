@@ -1,9 +1,10 @@
 .login{
-    background-color: #aac0c5;
+    background-color: #aac0c593;
     margin: auto;
     width: 20%;
     height: 50%;
-    border: 3px solid green;
+    border: 3px solid rgba(45, 53, 45, 0.349);
     padding: 10px;
 
 }
+

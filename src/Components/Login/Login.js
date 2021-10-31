@@ -15,13 +15,15 @@ const Login = () => {
       })
 
   }
+
   return (
+
     <div>
       <div className="card login text-center">
         <div className="card-body">
           <h5 className="card-title">Log In</h5>
-            <img className="img-fluid" src="https://i.pinimg.com/736x/52/2a/01/522a0187853113d584c2379b7761442a.jpg" alt="" />
-          <button className="bg-info rounded my-2 p-3" onClick={googleSigninHandler}>Google Signing</button>
+          <img className="img-fluid" src="https://i.pinimg.com/736x/52/2a/01/522a0187853113d584c2379b7761442a.jpg" alt="" />
+          <button className="bg-dark text-white rounded my-2 p-3" onClick={googleSigninHandler}>Google Signing</button>
         </div>
       </div>
     </div>

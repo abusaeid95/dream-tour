@@ -8,14 +8,14 @@ const axios = require('axios');
 const BookedItem = () => {
     const [bookeditems, setBookeditems] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/booked')
+        fetch('https://frightening-phantom-67062.herokuapp.com/booked')
             .then(res => res.json())
             .then(data => setBookeditems(data))
     }, [])
     const handleDelete = (id) => {
         const proceed = window.confirm('Are you want to delete?')
         if (proceed) {
-            const url = `http://localhost:5000/booked/${id}`
+            const url = `https://frightening-phantom-67062.herokuapp.com/booked/${id}`
             fetch(url, {
                 method: "DELETE"
             }).then(res => res.json())
@@ -31,7 +31,7 @@ const BookedItem = () => {
     }
 
     const updateHandler = (id) => {
-        axios.put(`http://localhost:5000/booked/update/${id}`,)
+        axios.put(`https://frightening-phantom-67062.herokuapp.com/booked/update/${id}`,)
             .then(function (response) {
                 if (response.data.modifiedCount) {
                     alert('update successfully');
