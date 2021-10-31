@@ -1,6 +1,5 @@
 import React from 'react';
 import './OfferCard.css'
-import { Card, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const OfferCard = ({ offer }) => {

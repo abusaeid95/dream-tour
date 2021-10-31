@@ -99,9 +99,23 @@
     }
 }
 
-/* .carousel-inner{
-    height: 700px;
-} */
+.wdrm{
+    color: rgb(255, 146, 57);
+}
+.wdrm1{
+    width: 150px;
+    height: 10px;
+    background-color: #faae4a;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.feturecard:hover{
+    border:2px solid #6be499e3;
+}
+.feturecard{
+    border:2px solid #8fe2e2e3;
+    border-radius: 20px;
+}
 .findybtn{
     background-color: #faae4a;
     color: #fff;
