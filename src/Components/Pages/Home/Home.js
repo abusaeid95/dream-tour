@@ -63,26 +63,80 @@ const Home = () => {
                     </Carousel.Item>
                 </Carousel>
             </div>
-            <div className="my-3 text-center">
-                <h1>Best Offers</h1>
-                <small>Check out our top-rated tours</small>
+            <div className="container">
+                <div className="my-3 text-center">
+                    <h1>Best Offers</h1>
+                    <small>Check out our top-rated tours</small>
+                </div>
+
+                <div className=" row row-cols-1 row-cols-md-3 g-4 my-4">
+
+                    {
+                        offers.map(offer => <OfferCard offer={offer}></OfferCard>)
+                    }
+
+                </div>
             </div>
-
-            <div class=" row row-cols-1 row-cols-md-3 g-4 my-4">
-
-                {
-                    offers.map(offer =>  <OfferCard offer={offer}></OfferCard>)
-                }
-
+            <div className="featurecard d-flex align-items-center justify-content-center">
+                <div className="container">
+                    <h1 className="d-flex align-item-center text-white mb-5 justify-content-center">Why DreamTour</h1>
+                    <div className="row row-cols-1 row-cols-md-3 g-4">
+                        <div className="col">
+                            <div className="card">
+                                <div class="card-body"><h2 class="card-title text-center">PERSONALIZED MATCHING</h2>
+                                    <h5 class="card-text text-center">Our search system helps you find a personalized tour in just a few clicks.</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <div class="card-body">
+                                    <h2 class="card-title text-center">WIDE VARIETY OF DESTINATIONS</h2>
+                                    <h5 class="card-text text-center">With SunTravel, you’ll find a perfect destination among hundreds available.</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <div class="card-body">
+                                    <h2 class="card-title text-center">HIGHLY QUALIFIED SERVICE</h2>
+                                    <h5 class="card-text text-center">Our high level of service is officially recognized by thousands of clients.</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <div class="card-body">
+                                    <h2 class="card-title text-center">24/7 SUPPORT</h2>
+                                    <h5 class="card-text text-center">Our travel agents are always there to support you during your trip..</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <div class="card-body">
+                                    <h2 class="card-title text-center">HANDPICKED HOTELS</h2>
+                                    <h5 class="card-text text-center">We pick the hotels with the utmost reputation and positive reviews.</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <div class="card-body">
+                                    <h2 class="card-title text-center">BEST PRICE GUARANTEE</h2>
+                                    <h5 class="card-text text-center">We guarantee you’ll get top-notch comfort at an affordable price.</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            {/* <div className="container">
-                <Row xs={1} md={3} className="g-4">
-                    {offers.map(offer => <OfferCard offer={offer}></OfferCard>
-
-                    )}
-                </Row>
-            </div> */}
+            <div className="thrddstle d-flex align-items-center justify-content-center">
+                <div className="">
+                    <h1 className="text-white">Fastest Way to Compare and <br /> Book over 450 Cheap Flights</h1>
+                    <button className="bg-dark text-white    rounded p-2 ">FIND YOUR FLIGHT</button>
+                </div>
+            </div>
         </div>
     );
 };

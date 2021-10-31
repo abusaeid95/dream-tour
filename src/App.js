@@ -21,6 +21,7 @@ import NotFound from './Components/NotFound/NotFound';
 import UpdateOffers from './Components/Admin/UpdateOffers/UpdateOffers';
 import BookedItem from './Components/Admin/BookedItem';
 import AboutUs from './Components/AboutUs/AboutUs';
+import Footer from './Components/Footer/Footer';
 
 
 function App() {
@@ -65,6 +66,9 @@ function App() {
               <NotFound></NotFound>
             </Route>
           </Switch>
+          <Route>
+              <Footer></Footer>
+            </Route>
         </Router>
       </AuthProvider>
     </div>

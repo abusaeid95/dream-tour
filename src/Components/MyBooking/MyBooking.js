@@ -31,22 +31,6 @@ const MyBooking = () => {
         }
     }
 
-    // const proceed = window.confirm('Are you want to delete?')
-    //     if (proceed) {
-    //         const url = `http://localhost:5000/booked/${id}`
-    //         fetch(url, {
-    //             method: "DELETE"
-    //         }).then(res => res.json())
-    //             .then(result => {
-    //                 if (result.deletedCount > 0) {
-    //                     alert('Deleted Successfully')
-    //                     const remainingUsers = bookeditems.filter(user => user._id !== id);
-    //                     setBookeditems(remainingUsers)
-    //                 }
-    //             })
-    //     }
-
-
     return (
         <>
 

@@ -30,6 +30,17 @@
     z-index: 1111;
 }
 
+.featurecard{
+    background-image: url('https://livedemo00.template-help.com/wt_60075_v2/images/backgrounds/background-05-1920x900.jpg');
+    width: 100vw;
+    height: 100vh;
+}
+.thrddstle{
+    background-image: url('https://livedemo00.template-help.com/wt_60075_v2/images/backgrounds/background-07-1920x900.jpg');
+    width: 100vw;
+    height:50vh;
+}
+
 @media only screen and (max-width: 990px){
     .search-sec{
         top: -118px;
